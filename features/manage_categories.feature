@@ -13,4 +13,11 @@ Feature: Manage Categories
     And I press "Save"
     Then I should see "Foobar"
 
+  Scenario: Successfully edit an existing category
+    Given I am on the new categorie page
+    When I follow "Edit" 
+    And I fill in "category_description" with "Test Foobar"
+    And I press "Save"
+    Then I should see "Test Foobar"
+
 
